@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Grability</string>
+    <string name="action_settings">Settings</string>
+    <string name="web_waitloading"> Espere porfavor, estamos cargando datos...</string>
+    <string name="web_absent">Conexión offline</string>
+    <string name="search">Buscar</string>
+    <string name="dialog_detail">Detalles</string>
+    <string name="dialog_categories">Categorias</string>
+    <string name="dialog_button">Atras</string>
+</resources>

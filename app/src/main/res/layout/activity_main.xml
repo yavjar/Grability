@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:background="#e9ff9184">
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/rappi_moto"
+            android:layout_gravity="center_vertical"/>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                android:layout_marginRight="15dp"
+                android:id="@+id/autocomplete_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/search"
+                android:textSize="20sp"
+                android:textColor="#222222"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_style"
+                android:maxLength="30"
+                android:layout_gravity="center_vertical"/>
+
+            <Button
+                android:id="@+id/autocomplete_search_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center_vertical|right"
+                android:background="@drawable/search_icon"/>
+        </FrameLayout>
+
+
+
+        <Button
+            android:id="@+id/button_category"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/rappi_mostach"
+            android:layout_gravity="center_vertical"/>
+
+
+    </LinearLayout>
+
+    <!--<include layout="@layout/content_main" />-->
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:scrollingCache="true"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"
+        android:background="@drawable/gradient"/>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/gradient"/>
+
+</LinearLayout>
